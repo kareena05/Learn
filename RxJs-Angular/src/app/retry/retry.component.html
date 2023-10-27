@@ -1,0 +1,32 @@
+<h1>Retry , RetryWhen , Scan , Delay</h1>
+
+<button class="btn btn-primary" type="button" disabled>
+    <span class="spinner-border spinner-border-sm" aria-hidden="true" *ngIf="isfetching"></span>
+    {{isfetching ? 'Fetching Details':'Fetch Details'}}
+  </button>
+<div class="row">
+    <div class="col-md-6">
+<strong [ngClass]="{'text-success': statusTag==2,
+                'text-danger' :statusTag==3}">       {{status}}</strong>
+        <table class="table" border="1" *ngIf="apidata!=null">
+           <tbody>
+            <tr>
+                <td>Api Name:</td><td>{{apidata.entries[100].API}}</td>
+            </tr>
+            <tr>
+                <td>Description:</td><td>{{apidata.entries[100].Description}}</td>
+            </tr>
+            <tr>
+                <td>Link:</td><td><a href="">{{apidata.entries[100].Link}}</a></td>
+            </tr>
+        </tbody>
+        </table>
+        <!-- <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" aria-hidden="true" *ngIf="isfetching"></span>
+            {{isfetching ? 'Fetching Details':'Details Fetched'}}
+          </button> -->
+        
+        
+        
+    </div>
+</div>

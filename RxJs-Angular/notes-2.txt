@@ -1,0 +1,10 @@
+<strong [ngClass]="{'text-success': statusTag==2,
+                'text-danger' :statusTag==3}">       {{status}}   {{statusTag}}</strong>
+        <table class="table" border="1" *ngIf="apidata!=null">
+
+
+a perfect way to use Ng class to add or remove class dynamically 
+the statement writtern after : colon is a condition
+
+
+

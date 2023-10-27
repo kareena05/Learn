@@ -1,0 +1,42 @@
+<h1>custom-obs works!</h1>
+<button (click)="unsubscrib()">click</button>
+<h1>Of and From</h1>
+<div class="row">
+    <div class="col-md-6">
+        <b>Example 1:Manual</b>
+        <hr>
+       <h4>techstatus:{{techstatus}}</h4> 
+      
+        <ul  id="ul-id" class="techlist" [ngClass]="techstatus == 'error'?'error-ul': techstatus == 'complete' ?'success-ul':'' ">
+           <!-- <li>Angular</li>
+           <li>Node</li>
+           <li>C#</li>
+           <li>.NET Core</li> -->
+
+
+        </ul>
+        <hr>
+    </div>
+    <div class="col-md-6">
+       <b>Example 2:Custom Interval Observable</b>
+        <hr>
+        <h4>status:{{techstatus2}}</h4> 
+      
+        <ul class="" id="ul-id-error" class="techlist" [ngClass]="techstatus2 == 'error'?'error-ul': techstatus2 == 'complete' ?'success-ul':'' ">
+            
+        </ul>
+        <hr>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-10">
+        <b>Example 1: Random Names</b>
+        <hr>
+        
+        <p class="border rounded bg-light py-2 px-2">{{names}}</p>
+        <p class="border rounded bg-light py-2 px-2">Current Name:<b>{{name}}</b></p>
+        <button type="button" class="btn btn-success" [ngClass]="namestatus== 'error'?'error-ul': namestatus== 'complete' ?'success-ul':'btn-info' ">{{namestatus}}</button>   
+    </div>
+
+    
+</div>

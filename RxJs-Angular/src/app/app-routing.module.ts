@@ -10,16 +10,15 @@ import { ToArrayComponent } from './to-array/to-array.component';
 import { CustomObsComponent } from './custom-obs/custom-obs.component';
 import { MappComponent } from './mapp/mapp.component';
 import { RetryComponent } from './retry/retry.component';
+import { DebounceComponent } from './debounce/debounce.component';
+import { SubjectComponent } from './subject/subject.component';
+import { HeaderComponent } from './header/header.component';
 
 const routes: Routes = [
   {path:"obs",component:ObservablesComponent,children:[
     {path:"list",component:AllComponent},
     {path:"form-event",component:FormEventComponent},
-    
-
   
-
-
   ]},
   {path:'interval',component:IntervalComponent},
   {path:"of",component:OfFromComponent},
@@ -27,7 +26,9 @@ const routes: Routes = [
   {path:"customObs",component:CustomObsComponent},
   {path:"map",component:MappComponent},
   {path:"retry",component:RetryComponent},
-
+  {path:"debounce",component:DebounceComponent},
+  {path:"subject",component:SubjectComponent},
+  {path:"header",component:HeaderComponent},
 
   
 ];

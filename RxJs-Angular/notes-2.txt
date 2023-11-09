@@ -6,5 +6,18 @@
 a perfect way to use Ng class to add or remove class dynamically 
 the statement writtern after : colon is a condition
 
-
-
+ DebounceTime and DistinctUntilChanged:
+        DebounceTime: you can set some time to process the request
+                      i.e after 1000 (1 second) the searched data will be displayed on screen
+                      mainly used for searching when user types the entire word then after 1
+                      second the request will return the response
+                      ->Debounce is like telling your code to chill for a bit before reacting to a user's input.
+                      It waits for a specified amount of time after the last event is emitted and then triggers the action.
+                      This is great for scenarios like search bars where you don't want to make a 
+                      request for every keystroke.
+        DistinctUntilChanged: for the same input as before , the  new request won't be sent
+                              the new request will be handled only if the input is changed.
+                              ->is the gatekeeper of uniqueness. It ensures that the action is only triggered
+                               if the current value is different from the previous one.
+                               This is handy when you want to ignore repeated consecutive values          
+ 

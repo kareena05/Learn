@@ -10,13 +10,13 @@
 <div class="card" style="width: 18rem">
   <div class="card-body">
     <h5 class="card-title">Summer</h5>
-    <p>Greetings from <span class="text-info">kareena</span></p>
+    <p>Greetings from <span class="text-info">{{username}}</span></p>
     <input
       type="text"
       class="form-control mb-2"
       placeholder="Enter name"
-      id=""
+      id="" #uname
     />
-    <a href="#" class="btn btn-primary">Change</a>
+    <button  class="btn btn-primary" (click)="changeName(uname)">Change</button>
   </div>
 </div>

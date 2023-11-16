@@ -21,3 +21,16 @@ the statement writtern after : colon is a condition
                                if the current value is different from the previous one.
                                This is handy when you want to ignore repeated consecutive values          
  
+ 
+ Subject and Behavious Subject:
+ 
+ Subject:
+
+A Subject is a special type of observable in RxJS that can act as both an observer and an observable.
+It allows values to be multicasted to multiple observers. When a Subject receives any new value, it will immediately notify all its subscribers.
+Subjects are both producers and consumers of observable values.
+
+BehaviorSubject:
+
+A BehaviorSubject is a type of subject that has a "current value" or "initial value" and emits it to subscribers when they subscribe.
+same as Subject additionaly it has the default/initial value.

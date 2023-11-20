@@ -34,3 +34,30 @@ BehaviorSubject:
 
 A BehaviorSubject is a type of subject that has a "current value" or "initial value" and emits it to subscribers when they subscribe.
 same as Subject additionaly it has the default/initial value.
+
+
+In RxJS, a ReplaySubject is a type of subject that extends the functionality
+ of a regular subject by recording and replaying multiple values to its 
+ subscribers. When a new observer subscribes to a ReplaySubject,
+  it will receive not only the new values emitted by the subject
+   but also a specified number of previously emitted values.
+ex: const replaySubject = new ReplaySubject<number>(2);
+
+// Subscribe to the ReplaySubject
+replaySubject.subscribe(data => console.log(`Observer 1: ${data}`));
+
+// (Emit)Next values into the ReplaySubject
+replaySubject.next("kareena");
+
+AsyncSubject:
+In RxJS, an AsyncSubject is another type of subject that, 
+similar to other subjects, can act as both an observer and an observable. 
+However, it has a special behavior: 
+it only emits the last value emitted by the AsyncSubject when it completes.
+i.e create -> const asyncSubject = new AsyncSubject<number>();
+it emits data when you do :asyncSubject.complete();
+
+In RxJS, completing an observable means notifying its subscribers 
+that no more values will be emitted. When an observable completes, 
+it sends a "complete" notification to its observers, indicating that
+the sequence of emissions is finished, and there won't be any more values.

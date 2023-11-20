@@ -20,6 +20,9 @@ import { HeaderComponent } from './header/header.component';
 import { Comp1Component } from './comps/comp1/comp1.component';
 import { Comp2Component } from './comps/comp2/comp2.component';
 import { Comp3Component } from './comps/comp3/comp3.component';
+import { AsyncSubjectComponent } from './async-subject/async-subject.component';
+import { ConcatComponent } from './concat/concat.component';
+import { MergeComponent } from './merge/merge.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import { Comp3Component } from './comps/comp3/comp3.component';
     HeaderComponent,
     Comp1Component,
     Comp2Component,
-    Comp3Component
+    Comp3Component,
+    AsyncSubjectComponent,
+    ConcatComponent,
+    MergeComponent,
   ],
   imports: [
     BrowserModule,

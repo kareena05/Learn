@@ -13,6 +13,10 @@ import { RetryComponent } from './retry/retry.component';
 import { DebounceComponent } from './debounce/debounce.component';
 import { SubjectComponent } from './subject/subject.component';
 import { HeaderComponent } from './header/header.component';
+import { AsyncSubjectComponent } from './async-subject/async-subject.component';
+import { ConcatComponent } from './concat/concat.component';
+import { MergeComponent } from './merge/merge.component';
+
 
 const routes: Routes = [
   {path:"obs",component:ObservablesComponent,children:[
@@ -29,6 +33,11 @@ const routes: Routes = [
   {path:"debounce",component:DebounceComponent},
   {path:"subject",component:SubjectComponent},
   {path:"header",component:HeaderComponent},
+  {path:"async-subject",component:AsyncSubjectComponent},
+  {path:"concat",component:ConcatComponent},
+  {path:"merge",component:MergeComponent},
+  
+
 
   
 ];
